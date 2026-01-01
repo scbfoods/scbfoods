@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+  SCB Foods - Simple Static Website
+  Files needed:
+  1) index.html (this file)
+  2) images/ (optional folder for product images)
+  No backend, no database, no cart logic.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SCB Foods | Ecommerce Store</title>
+  <style>
+    body { margin:0; font-family:Arial, Helvetica, sans-serif; background:#f7f7f7; color:#333; }
+    header { background:#0b6623; color:#fff; padding:15px 40px; display:flex; justify-content:space-between; align-items:center; }
+    header h1 { margin:0; font-size:24px; }
+    nav a { color:#fff; margin-left:20px; text-decoration:none; font-weight:bold; }
+    .hero { background:url('https://images.unsplash.com/photo-1604908177522-0403c1f2a03b') center/cover no-repeat; color:#fff; padding:80px 40px; text-align:center; }
+    .hero h2 { font-size:40px; margin-bottom:10px; }
+    .hero p { font-size:18px; margin-bottom:20px; }
+    .btn { background:#ff9800; color:#fff; padding:12px 25px; border:none; cursor:pointer; font-size:16px; border-radius:4px; }
+    .section { padding:50px 40px; }
+    .section h2 { text-align:center; margin-bottom:30px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:25px; }
+    .card { background:#fff; border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.1); padding:20px; text-align:center; }
+    .card img { max-width:100%; height:160px; object-fit:contain; margin-bottom:15px; }
+    .price { font-weight:bold; margin:10px 0; }
+    footer { background:#222; color:#ccc; padding:30px 40px; text-align:center; }
+    footer p { margin:5px 0; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>SCB Foods</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Quality Spices & Home Care Products</h2>
+  <p>Pure Indian spices and trusted home care solutions</p>
+  <button class="btn">Shop Now</button>
+</section>
+
+<section class="section" id="products">
+  <h2>Our Products</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200?text=Red+Chilli+Powder" />
+      <h3>Red Chilli Powder</h3>
+      <p>Bold flavour & rich colour</p>
+      <div class="price">₹180</div>
+      <button class="btn">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200?text=Turmeric+Powder" />
+      <h3>Turmeric Powder</h3>
+      <p>Pure & aromatic</p>
+      <div class="price">₹150</div>
+      <button class="btn">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200?text=Dishwash+Liquid" />
+      <h3>Dishwash Liquid</h3>
+      <p>Powerful grease removal</p>
+      <div class="price">₹99</div>
+      <button class="btn">Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200?text=Floor+Cleaner" />
+      <h3>Floor Cleaner</h3>
+      <p>Fresh & hygienic floors</p>
+      <div class="price">₹120</div>
+      <button class="btn">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about" style="background:#fff;">
+  <h2>About SCB Foods</h2>
+  <p style="max-width:800px;margin:auto;text-align:center;">
+    SCB Foods is committed to delivering high-quality spices and reliable home care products. Our focus is purity, hygiene, and customer satisfaction.
+  </p>
+</section>
+
+<section class="section" id="contact">
+  <h2>Contact Us</h2>
+  <p style="text-align:center;">📍 Jodhpur, Rajasthan | 📞 +91 98290 00500 | ✉️ info@scbfoods.com</p>
+</section>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/919829000500?text=Hello%20SCB%20Foods,%20I%20want%20to%20place%20an%20order" target="_blank" style="position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:14px 18px;border-radius:50px;text-decoration:none;font-weight:bold;box-shadow:0 4px 10px rgba(0,0,0,0.3);z-index:999;">💬 Order on WhatsApp</a>
+
+<footer>
+  <p>© 2026 SCB Foods. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
